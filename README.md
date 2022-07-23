@@ -1,19 +1,3 @@
-# app
+自己学习练习的项目
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+这是本人简单的运用vue和element技术根据苹果官网写的项目
