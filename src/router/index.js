@@ -8,20 +8,57 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: HomeView,
   },
   {
-    path: '/about',
-    name: 'about',
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
+    path: '/mac',
+    name: 'mac',
+    component: () => import('../views/Mac.vue')
+  },
+  {
+    path:'/shop',
+    name:'shop',
+    component:() => import('../views/Shop.vue')
+  },
+  {
+    path:'/ipad',
+    name:'ipad',
+    component:() => import('../views/IPad.vue')
+  },
+  {
+    path:'/iphone',
+    name:'iphone',
+    component:() => import('../views/IPhone.vue')
+  },
+  {
+    path:'/watch',
+    name:'watch',
+    component:() => import('../views/Watch.vue')
+  },
+  {
+    path:'/airpods',
+    name:'airpods',
+    component:() => import('../views/AirPods.vue')
+  },
+  {
+    path:'/homepod',
+    name:'homepod',
+    component:() => import('../views/HomePod.vue')
+  },
+  {
+    path:'/technology',
+    name:'technology',
+    component:() => import('../views/Technology.vue')
+  },
+  {
+    path:'/parts',
+    name:'parts',
+    component:() => import('../views/Parts.vue')
   }
 ]
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: 'hash',
   base: process.env.BASE_URL,
   routes
 })
